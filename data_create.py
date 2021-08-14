@@ -78,7 +78,7 @@ for i in indices: # FOR EACH SPLIT
     station_lstm_data  = np.array(train_data,dtype=object).flatten() #SIZE: 8736,23,M+AQ,~24 
 
     local_lstm_data = np.array([local_data[k][met_data.columns] for k in range(len(local_data))]) #SIZE: 8736, M,~24
-    local_y = np.array([local_data[k].iloc[-1,aq_data.columns] for k in range(len(local_data))])  #SIZE: 8736, AQ,1
+   
 
 
     
